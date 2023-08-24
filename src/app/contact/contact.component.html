@@ -1,0 +1,103 @@
+<main>
+  <article>
+
+    <!--
+      - #CONTACT
+    -->
+
+    <section class="section contact has-bg-image" aria-labelledby="contact-label"
+             style="background-image: url('./assets/images/contact-bg.png')">
+      <div class="container">
+
+        <form (ngSubmit)="onSubmit()" class="contact-form">
+
+          <h2 class="headline-sm" id="contact-label">Entre em contato</h2>
+
+          <p class="contact-text body-md">
+            Vou responder o mais rápido possível
+          </p>
+
+          <div class="wrapper">
+
+            <div>
+              <label for="name" class="label">Primeiro Nome</label>
+
+              <input type="text" name="name" id="name" placeholder="Nome *" required class="input-field" [(ngModel)]="name">
+            </div>
+
+            <div>
+              <label for="email" class="label">Seu email </label>
+
+              <input type="email" name="email" id="email" placeholder="Email *" required class="input-field" [(ngModel)]="email">
+            </div>
+
+          </div>
+
+          <label for="subject" class="label">Assunto</label>
+          <input type="text" name="subject" id="subject" placeholder="Assunto *" class="input-field"  [(ngModel)]="subject">
+
+          <label for="message" class="label">Sua mensagem </label>
+          <textarea name="message" id="message" placeholder="Sua mensagem *" required class="input-field"  [(ngModel)]="message"></textarea>
+
+          <button href="#" class="btn btn-tertiary" type="submit">ENVIAR MENSAGEM</button>
+
+        </form>
+
+        <div class="contact-content">
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+
+              <div class="item-icon" style="background-color: hsl(177, 39%, 72%)">
+                <ion-icon name="call" aria-hidden="true"></ion-icon>
+              </div>
+
+              <div>
+                <p class="label-lg">Telefone</p>
+
+                <a href="tel:+5531991209971" class="body-lg">+55 (31)99120-9971</a>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="item-icon" style="background-color: hsl(41, 99%, 64%)">
+                <ion-icon name="mail" aria-hidden="true"></ion-icon>
+              </div>
+
+              <div>
+                <p class="label-lg">Email</p>
+
+                <a href="tel:info@outlook.com" class="body-lg">matheusandradedesouza@outlook.com</a>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="item-icon" style="background-color: hsl(19, 97%, 85%)">
+                <ion-icon name="location" aria-hidden="true"></ion-icon>
+              </div>
+
+              <div>
+                <p class="label-lg">Endereço</p>
+
+                <address class="body-lg">
+                  Belo Horizonte,
+                  Minas Gerais
+                </address>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+  </article>
+</main>
